@@ -1,0 +1,44 @@
+
+
+textarea {
+    font-family: "roboto-mono", sans-serif;
+}
+
+.toggle-theme  input:checked + label {
+    background-color: #5A6069;
+  }
+  
+  .toggle-theme  input:checked + label::before {
+    transform: translateX(0px);
+  }
+
+  .toggle-theme  label::before {
+    transition: 0.3s;
+  }
+
+  [class = "dark"] {
+    --primary: #FFF;
+    --secondary: #C1C4CB;
+    --ul: #7C8187;
+    --bg: #2B2D31;
+  }
+
+  .prose .markdown code , .prose .markdown h1 ,.prose .markdown h2 ,  .prose .markdown h3 ,.prose .markdown h4 ,  .prose .markdown h5 ,.prose .markdown h6{
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  .prose .markdown p {
+    color: var(--secondary);
+  }
+
+  .prose .markdown ul li ,   .prose .markdown ol li{
+    color: var(--secondary);
+  }
+
+  .prose .markdown blockquote {
+    border-left-color: #E46643;
+  }
+  .prose .markdown blockquote p ,   .prose .markdown blockquote p a ,   .prose .markdown a {
+    color: var(--primary);
+  }
